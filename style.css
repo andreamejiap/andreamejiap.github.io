@@ -1,0 +1,92 @@
+@import url('https://fronts.googleapis.com/css?family=Relawey');
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
+
+body{
+    margin: 0;
+    font-family: 'Ralawey';
+    font-size: 16px;
+       
+}
+
+header, main, footer{
+    margin: 0 auto;
+}
+
+header{
+    padding: 2em;
+    text-align: center;
+    background-image: url('./imagen/bg.jpg');
+    background-size: cover;
+    background-position: fixed;
+    color: white;
+    font-weight: bold;
+}
+header img{
+    border-radius: 50%;
+}
+header p{
+    text-align: center;
+}
+section{
+    margin: 1em;
+    padding: 1em;
+}
+h3{
+    text-transform: uppercase;
+}
+h3,h4{
+    font-weight: bold;
+}
+main{
+    max-width: 1140px;
+}
+p{
+    text-align: justify;
+}
+.skills {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+   }
+   .skills .column {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+   }
+   .skills .column ul{
+    list-style-type: none;
+   }
+   .skills .column ol{
+    list-style: none;
+    counter-reset: my-awesome-counter;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+   }
+   .skills .column ol li {
+    counter-increment: my-awesome-counter;
+    display: flex;
+    width: 50%;
+    font-size: 1em;
+    margin-bottom: 0.5em;
+   }
+   .skills .column ol li::before {
+    content: "0" counter(my-awesome-counter);
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-right: 0.5em;
+    font-family: 'Abril Fatface', serif;
+    line-height: 1;
+   } 
+   article{
+       margin-bottom: 0.5em;
+   }
+   .degree{
+       text-transform: capitalize;
+   }
+   .degree spa{
+       color: purple;
+       text-decoration: underline;
+   }
